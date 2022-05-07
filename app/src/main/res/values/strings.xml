@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">education platform</string>
+    <string name="categories_bottom_menu">Categories</string>
+    <string name="lectures_bottom_menu">Lectures</string>
+    <string name="profile_bottom_menu">Profile</string>
 </resources>
