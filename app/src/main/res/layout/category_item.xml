@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="36dp"
+    android:layout_marginVertical="4dp"
+    android:fontFamily="@font/montserrat_bold"
+    android:paddingHorizontal="18dp"
+    android:paddingVertical="20dp"
+    android:text="Дизайн"
+    android:textAllCaps="false"
+    android:textColor="#FF212121"
+    android:textSize="18sp"
+    app:backgroundTint="#FF7CEECF"
+    app:cornerRadius="64dp" />

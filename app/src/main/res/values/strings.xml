@@ -3,4 +3,6 @@
     <string name="categories_bottom_menu">Categories</string>
     <string name="lectures_bottom_menu">Lectures</string>
     <string name="profile_bottom_menu">Profile</string>
+    <string name="profile_info_example">Люблю путешествия, спорт, здоровый образ жизни. Изучаю разработку, планирую создать свою мобильную игру.</string>
+    <string name="profile_name_example">Екатерина Смирнова</string>
 </resources>

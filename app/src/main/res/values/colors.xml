@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Category colors -->
+    <color name="handcraft">#FFE55290</color>
+    <color name="sport">#FFE56452</color>
+    <color name="marketing">#FFF89147</color>
+    <color name="languages">#FFE5C552</color>
+    <color name="emigration">#FF59EB69</color>
+    <color name="design">#FF77EB97</color>
+    <color name="programming">#FF7EEFDC</color>
 </resources>

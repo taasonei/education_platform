@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".ProfileFragment">
 
-</FrameLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="56dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_photo"
+            app:shapeAppearance="@style/rounded_corner" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/profile_name_example"
+            android:textAlignment="center"
+            android:textColor="#FF212121"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/profile_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/profile_info_example"
+            android:textColor="#FF212121"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingHorizontal="36dp"
+            android:paddingTop="32dp"
+            android:text="Мои лекции"
+            android:textColor="#FF212121"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="18dp"
+            android:text="Создание макетов в Figma"
+            android:textAllCaps="false"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:backgroundTint="#FF7CEECF"
+            app:cornerRadius="64dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="18dp"
+            android:text="Flutter для начинающих"
+            android:textAllCaps="false"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:backgroundTint="#FF7CEECF"
+            app:cornerRadius="64dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingHorizontal="36dp"
+            android:paddingTop="32dp"
+            android:text="Мои направления"
+            android:textColor="#FF212121"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="18dp"
+            android:text="Программирование"
+            android:textAllCaps="false"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:backgroundTint="#FF7CEECF"
+            app:cornerRadius="64dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="18dp"
+            android:text="Дизайн"
+            android:textAllCaps="false"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:backgroundTint="#FF7CEECF"
+            app:cornerRadius="64dp" />
+
+    </LinearLayout>
+
+</ScrollView>
