@@ -16,4 +16,54 @@
     <color name="emigration">#FF59EB69</color>
     <color name="design">#FF77EB97</color>
     <color name="programming">#FF7EEFDC</color>
+
+    <!-- Subcategory handcraft -->
+    <color name="sewing">#FFF81B78</color>
+    <color name="embroidery">#FFE82D7C</color>
+    <color name="decorations">#FFE44286</color>
+    <color name="ceramics">#FFE26097</color>
+
+    <!-- Subcategory sport -->
+    <color name="fitness">#FFE84731</color>
+    <color name="yoga">#FFE25441</color>
+    <color name="physiotherapy">#FFE16150</color>
+    <color name="pilates">#FFDE6C5D</color>
+    <color name="stretching">#FFDD7E71</color>
+
+    <!-- Subcategory marketing -->
+    <color name="smm">#FFF89147</color>
+    <color name="copywriting">#FFF6A265</color>
+    <color name="pr_management">#FFF2AB77</color>
+    <color name="brand_management">#FFF0B58A</color>
+    <color name="seo_optimization">#FFEDC1A1</color>
+    <color name="ppc">#FFEACAB2</color>
+
+    <!-- Subcategory languages -->
+    <color name="english">#FFE5C552</color>
+    <color name="spanish">#FFDFC66A</color>
+    <color name="chinese">#FFE0CB7D</color>
+    <color name="japanese">#FFDCCB8C</color>
+    <color name="portugese">#FFD8CDA4</color>
+    <color name="norvegian">#FFD6CFB7</color>
+
+    <!-- Subcategory emigration -->
+    <color name="europe">#FF59EB69</color>
+    <color name="usa">#FF6CE979</color>
+    <color name="latin_america">#FF81E88C</color>
+    <color name="australia">#FF97E9A0</color>
+    <color name="africa">#FFA5E7AC</color>
+    <color name="asia">#FFB0E4B6</color>
+
+    <!-- Subcategory design -->
+    <color name="graphic_design">#FF77EB97</color>
+    <color name="web_design">#FF84EBA1</color>
+    <color name="motion_design">#FF9AEBB0</color>
+    <color name="interior_design">#FFACE4BC</color>
+    <color name="game_design">#FFB7DFC3</color>
+    <color name="product_design">#FFC9DECF</color>
+
+    <!-- Subcategory programming -->
+    <color name="web_development">#FF7EEFDC</color>
+    <color name="mobile_development">#FF92E8D9</color>
+    <color name="analytics">#FFA2E7DB</color>
 </resources>
