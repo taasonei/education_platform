@@ -9,7 +9,6 @@
     android:fontFamily="@font/montserrat_bold"
     android:paddingHorizontal="18dp"
     android:paddingVertical="20dp"
-    android:text="Дизайн"
     android:textAllCaps="false"
     android:textColor="#FF212121"
     android:textSize="18sp"
