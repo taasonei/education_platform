@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.github.taasonei.educationplatform.databinding.FragmentLectureListBinding
 import com.github.taasonei.educationplatform.model.lectures
 import com.github.taasonei.educationplatform.recycler.LectureListAdapter
@@ -14,7 +15,10 @@ class LectureListFragment : Fragment() {
     private var _binding: FragmentLectureListBinding? = null
     private val binding get() = _binding!!
 
-    private val onClick: (View, Int) -> Unit = { view: View, id: Int -> }
+    private val onClick: (View, Int) -> Unit = { view: View, id: Int ->
+        val action = LectureListFragmentDirections.actionLectureListFragmentToLectureFragment(id)
+        view.findNavController().navigate(action)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

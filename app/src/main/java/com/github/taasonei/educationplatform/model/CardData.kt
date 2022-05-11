@@ -9,7 +9,7 @@ data class Lecture(
     val title: String,
     val subtitle: String,
     val image: String,
-    val data: LocalDateTime,
+    val dateTime: LocalDateTime,
     val isRecorded: Boolean
 ) : CardData()
 
@@ -19,7 +19,7 @@ val lectures = listOf<Lecture>(
         title = "Создание макетов в фигме",
         subtitle = "Пошаговая инструкция",
         image = "",
-        data = LocalDateTime.now(),
+        dateTime = LocalDateTime.now(),
         isRecorded = false
     ),
     Lecture(
@@ -27,7 +27,7 @@ val lectures = listOf<Lecture>(
         title = "Регрессионное тестирование приложений",
         subtitle = "Полное и частичное, проблемы, выбор тестов",
         image = "",
-        data = LocalDateTime.now(),
+        dateTime = LocalDateTime.now(),
         isRecorded = false
     ),
     Lecture(
@@ -35,7 +35,7 @@ val lectures = listOf<Lecture>(
         title = "Flutter для начинающих",
         subtitle = "Разработка мобильных приложений",
         image = "",
-        data = LocalDateTime.now(),
+        dateTime = LocalDateTime.now(),
         isRecorded = true
     ),
     Lecture(
@@ -43,7 +43,7 @@ val lectures = listOf<Lecture>(
         title = " UX/UI-дизайн",
         subtitle = "Проектирование пользовательских интерфейсов",
         image = "",
-        data = LocalDateTime.now(),
+        dateTime = LocalDateTime.now(),
         isRecorded = false
     ),
 )

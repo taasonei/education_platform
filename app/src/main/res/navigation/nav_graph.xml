@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_category_list">
         <argument
             android:name="showToolbar"
-            app:argType="boolean" />
+            app:argType="boolean"
+            android:defaultValue="false" />
         <action
             android:id="@+id/action_categoryListFragment_to_subcategoryListFragment"
             app:destination="@id/subcategoryListFragment">
@@ -25,7 +26,11 @@
         tools:layout="@layout/fragment_lecture_list">
         <argument
             android:name="showToolbar"
-            app:argType="boolean" />
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_lectureListFragment_to_lectureFragment"
+            app:destination="@id/lectureFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -34,7 +39,8 @@
         tools:layout="@layout/fragment_profile">
         <argument
             android:name="showToolbar"
-            app:argType="boolean" />
+            app:argType="boolean"
+            android:defaultValue="false"/>
     </fragment>
     <fragment
         android:id="@+id/subcategoryListFragment"
@@ -49,5 +55,18 @@
             android:name="showToolbar"
             app:argType="boolean"
             android:defaultValue="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/lectureFragment"
+        android:name="com.github.taasonei.educationplatform.fragment.LectureFragment"
+        tools:layout="@layout/fragment_lecture">
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="showToolbar"
+            android:defaultValue="true"
+            app:argType="boolean" />
     </fragment>
 </navigation>

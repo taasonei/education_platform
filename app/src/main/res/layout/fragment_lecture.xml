@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LectureFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/lecture_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/card_image_rounded_corner"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/lecture_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#FF212121"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lecture_image"
+            app:layout_constraintTop_toTopOf="@id/lecture_image"
+            tools:text="Регрессионное тестирование приложений" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="lecture_image,lecture_title" />
+
+        <TextView
+            android:id="@+id/lecture_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Алгоритмы и структуры данных. Регрессионное тестирование приложений"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/lecture_title"
+            app:layout_constraintStart_toStartOf="@id/lecture_image"
+            app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+        <TextView
+            android:id="@+id/when_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Когда"
+            android:textColor="#FF212121"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/lecture_date"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/lecture_description"
+            app:layout_constraintTop_toBottomOf="@id/lecture_description" />
+
+        <TextView
+            android:id="@+id/which_time_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Во сколько"
+            android:textColor="#FF212121"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/lecture_time"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/when_lecture"
+            app:layout_constraintTop_toBottomOf="@id/when_lecture" />
+
+        <TextView
+            android:id="@+id/lecture_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="20.05.2022"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/when_lecture"
+            app:layout_constraintEnd_toEndOf="@id/lecture_description"
+            app:layout_constraintStart_toEndOf="@id/when_lecture"
+            app:layout_constraintTop_toTopOf="@id/when_lecture" />
+
+        <TextView
+            android:id="@+id/lecture_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="12:00"
+            android:textColor="#FF212121"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/which_time_lecture"
+            app:layout_constraintEnd_toEndOf="@id/lecture_description"
+            app:layout_constraintStart_toEndOf="@id/which_time_lecture"
+            app:layout_constraintTop_toTopOf="@id/which_time_lecture" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="which_time_lecture,lecture_time" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/enroll_lecture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="20dp"
+            android:text="Записаться"
+            android:textAllCaps="false"
+            android:textColor="#FF212121"
+            android:textSize="20sp"
+            app:backgroundTint="#FF7CEECF"
+            app:cornerRadius="64dp"
+            app:layout_constraintTop_toBottomOf="@id/barrier2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/lecture_description"
+            app:layout_constraintStart_toStartOf="@id/lecture_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
