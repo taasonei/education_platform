@@ -3,6 +3,7 @@ package com.github.taasonei.educationplatform.model
 import androidx.annotation.DrawableRes
 import com.github.taasonei.educationplatform.R
 import java.time.LocalTime
+import java.time.temporal.ChronoUnit
 
 data class Curator(
     val id: Int,

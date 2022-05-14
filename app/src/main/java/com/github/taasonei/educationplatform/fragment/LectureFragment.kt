@@ -9,6 +9,7 @@ import androidx.navigation.fragment.navArgs
 import com.github.taasonei.educationplatform.R
 import com.github.taasonei.educationplatform.databinding.FragmentLectureBinding
 import com.github.taasonei.educationplatform.model.lectures
+import java.time.format.DateTimeFormatter
 
 
 class LectureFragment : Fragment() {
@@ -35,17 +36,9 @@ class LectureFragment : Fragment() {
                 lectureTitle.text = currentLecture.title
                 lectureDescription.text = currentLecture.subtitle
                 lectureDate.text =
-                    getString(
-                        R.string.lecture_date,
-                        currentLecture.dateTime.dayOfMonth,
-                        currentLecture.dateTime.monthValue,
-                        currentLecture.dateTime.year
-                    )
-                lectureTime.text = getString(
-                    R.string.lecture_time,
-                    currentLecture.dateTime.hour,
-                    currentLecture.dateTime.minute
-                )
+                    currentLecture.dateTime.format(DateTimeFormatter.ofPattern("dd.MM.uuuu"))
+                lectureTime.text =
+                    currentLecture.dateTime.format(DateTimeFormatter.ofPattern("HH:mm"))
             }
         } else {
             binding.apply {

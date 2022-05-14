@@ -5,6 +5,4 @@
     <string name="profile_bottom_menu">Profile</string>
     <string name="profile_info_example">Люблю путешествия, спорт, здоровый образ жизни. Изучаю разработку, планирую создать свою мобильную игру.</string>
     <string name="profile_name_example">Екатерина Смирнова</string>
-    <string name="lecture_date">%1$d.%2$d.%3$d</string>
-    <string name="lecture_time">%1$d:%2$d</string>
-</resources>
+   </resources>

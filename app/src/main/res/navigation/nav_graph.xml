@@ -36,7 +36,7 @@
         android:id="@+id/profileFragment"
         android:name="com.github.taasonei.educationplatform.fragment.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile">
+        tools:layout="@layout/fragment_user_profile">
         <argument
             android:name="showToolbar"
             app:argType="boolean"
@@ -77,6 +77,23 @@
         android:name="com.github.taasonei.educationplatform.fragment.CuratorListFragment"
         android:label="fragment_curator_list"
         tools:layout="@layout/fragment_curator_list" >
+        <argument
+            android:name="showToolbar"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_curatorListFragment_to_curatorProfileFragment"
+            app:destination="@id/curatorProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/curatorProfileFragment"
+        android:name="com.github.taasonei.educationplatform.fragment.CuratorProfileFragment"
+        android:label="fragment_curator_profile"
+        tools:layout="@layout/fragment_curator_profile" >
+        <argument
+            android:name="curatorId"
+            app:argType="integer"
+            android:defaultValue="-1" />
         <argument
             android:name="showToolbar"
             app:argType="boolean"
