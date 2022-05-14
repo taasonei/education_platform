@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_category_list">
         <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <action
             android:id="@+id/action_categoryListFragment_to_subcategoryListFragment"
-            app:destination="@id/subcategoryListFragment">
-        </action>
+            app:destination="@id/subcategoryListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/lectureListFragment"
         android:name="com.github.taasonei.educationplatform.fragment.LectureListFragment"
@@ -26,12 +26,13 @@
         tools:layout="@layout/fragment_lecture_list">
         <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <action
             android:id="@+id/action_lectureListFragment_to_lectureFragment"
             app:destination="@id/lectureFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.github.taasonei.educationplatform.fragment.ProfileFragment"
@@ -39,26 +40,32 @@
         tools:layout="@layout/fragment_user_profile">
         <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="false"/>
+            android:defaultValue="false"
+            app:argType="boolean" />
     </fragment>
+
     <fragment
         android:id="@+id/subcategoryListFragment"
         android:name="com.github.taasonei.educationplatform.fragment.SubcategoryListFragment"
-        android:label="fragment_subcategory_list"
+        android:label="{title}"
         tools:layout="@layout/fragment_subcategory_list">
         <argument
             android:name="categoryId"
             android:defaultValue="0"
             app:argType="integer" />
         <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="true"/>
+            android:defaultValue="true"
+            app:argType="boolean" />
         <action
             android:id="@+id/action_subcategoryListFragment_to_curatorListFragment"
             app:destination="@id/curatorListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/lectureFragment"
         android:name="com.github.taasonei.educationplatform.fragment.LectureFragment"
@@ -72,31 +79,38 @@
             android:defaultValue="true"
             app:argType="boolean" />
     </fragment>
+
     <fragment
         android:id="@+id/curatorListFragment"
         android:name="com.github.taasonei.educationplatform.fragment.CuratorListFragment"
-        android:label="fragment_curator_list"
-        tools:layout="@layout/fragment_curator_list" >
+        android:label="@string/curator_list_title"
+        tools:layout="@layout/fragment_curator_list">
         <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:argType="boolean" />
         <action
             android:id="@+id/action_curatorListFragment_to_curatorProfileFragment"
             app:destination="@id/curatorProfileFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/curatorProfileFragment"
         android:name="com.github.taasonei.educationplatform.fragment.CuratorProfileFragment"
-        android:label="fragment_curator_profile"
-        tools:layout="@layout/fragment_curator_profile" >
+        android:label="{title}"
+        tools:layout="@layout/fragment_curator_profile">
         <argument
             android:name="curatorId"
-            app:argType="integer"
-            android:defaultValue="-1" />
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string" />
         <argument
             android:name="showToolbar"
-            app:argType="boolean"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:argType="boolean" />
     </fragment>
+
 </navigation>

@@ -17,7 +17,7 @@ class CuratorListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val onClick: (View, Int) -> Unit = {view, id ->
-        val action = CuratorListFragmentDirections.actionCuratorListFragmentToCuratorProfileFragment(id)
+        val action = CuratorListFragmentDirections.actionCuratorListFragmentToCuratorProfileFragment(id, curators[id].name)
         view.findNavController().navigate(action)
     }
 

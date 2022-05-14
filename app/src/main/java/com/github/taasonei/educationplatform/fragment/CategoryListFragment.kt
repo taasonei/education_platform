@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.github.taasonei.educationplatform.databinding.FragmentCategoryListBinding
 import com.github.taasonei.educationplatform.model.categoryList
+import com.github.taasonei.educationplatform.model.lectures
 import com.github.taasonei.educationplatform.recycler.CategoryListAdapter
 
 class CategoryListFragment : Fragment() {
@@ -17,7 +18,7 @@ class CategoryListFragment : Fragment() {
 
     private val onClick: (View, Int) -> Unit = { view: View, id: Int ->
         val action =
-            CategoryListFragmentDirections.actionCategoryListFragmentToSubcategoryListFragment(id)
+            CategoryListFragmentDirections.actionCategoryListFragmentToSubcategoryListFragment(id, categoryList[id].title)
         view.findNavController().navigate(action)
     }
 
@@ -42,14 +43,4 @@ class CategoryListFragment : Fragment() {
         _binding = null
     }
 
-//    companion object {
-//        @JvmStatic
-//        fun newInstance(param1: String, param2: String) =
-//            CategoryListFragment().apply {
-//                arguments = Bundle().apply {
-//                    putString(ARG_PARAM1, param1)
-//                    putString(ARG_PARAM2, param2)
-//                }
-//            }
-//    }
 }
