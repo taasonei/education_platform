@@ -36,6 +36,12 @@ class CardViewHolder(
     private fun bindLectureItem(lecture: Lecture) {
         binding.cardTitle.text = lecture.title
         binding.cardSubtitle.text = lecture.subtitle
+        binding.cardImage.setImageDrawable(
+            AppCompatResources.getDrawable(
+                binding.root.context,
+                lecture.image
+            )
+        )
         binding.cardId.setOnClickListener { view -> onClick(view, lecture.id) }
     }
 

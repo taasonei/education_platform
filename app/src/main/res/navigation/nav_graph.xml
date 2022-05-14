@@ -69,6 +69,7 @@
     <fragment
         android:id="@+id/lectureFragment"
         android:name="com.github.taasonei.educationplatform.fragment.LectureFragment"
+        android:label="@string/lecture_title"
         tools:layout="@layout/fragment_lecture">
         <argument
             android:name="lectureId"

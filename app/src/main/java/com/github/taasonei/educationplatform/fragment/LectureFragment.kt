@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.github.taasonei.educationplatform.R
@@ -39,6 +40,12 @@ class LectureFragment : Fragment() {
                     currentLecture.dateTime.format(DateTimeFormatter.ofPattern("dd.MM.uuuu"))
                 lectureTime.text =
                     currentLecture.dateTime.format(DateTimeFormatter.ofPattern("HH:mm"))
+                lectureImage.setImageDrawable(
+                    AppCompatResources.getDrawable(
+                        requireContext(),
+                        currentLecture.image
+                    )
+                )
             }
         } else {
             binding.apply {
