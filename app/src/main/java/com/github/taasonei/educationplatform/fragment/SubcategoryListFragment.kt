@@ -1,16 +1,15 @@
 package com.github.taasonei.educationplatform.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.NavArgs
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.github.taasonei.educationplatform.databinding.FragmentSubcategoryListBinding
 import com.github.taasonei.educationplatform.model.subcategoryList
 import com.github.taasonei.educationplatform.recycler.CategoryListAdapter
-
 
 class SubcategoryListFragment : Fragment() {
 
@@ -19,7 +18,11 @@ class SubcategoryListFragment : Fragment() {
 
     private val args: SubcategoryListFragmentArgs by navArgs()
 
-    private val onClick: (View, Int) -> Unit = { view: View, id: Int -> }
+    private val onClick: (View, Int) -> Unit = { view: View, id: Int ->
+        val action =
+            SubcategoryListFragmentDirections.actionSubcategoryListFragmentToCuratorListFragment()
+        view.findNavController().navigate(action)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +37,10 @@ class SubcategoryListFragment : Fragment() {
 
         val listAdapter = CategoryListAdapter(onClick)
         binding.subcategoryRecycler.adapter = listAdapter
-        listAdapter.submitList(subcategoryList[args.id])
+        val categoryId = args.categoryId
+        if (categoryId > -1) {
+            listAdapter.submitList(subcategoryList[args.categoryId])
+        }
     }
 
     override fun onDestroy() {

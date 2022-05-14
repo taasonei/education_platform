@@ -48,25 +48,38 @@
         android:label="fragment_subcategory_list"
         tools:layout="@layout/fragment_subcategory_list">
         <argument
-            android:name="id"
+            android:name="categoryId"
             android:defaultValue="0"
             app:argType="integer" />
         <argument
             android:name="showToolbar"
             app:argType="boolean"
             android:defaultValue="true"/>
+        <action
+            android:id="@+id/action_subcategoryListFragment_to_curatorListFragment"
+            app:destination="@id/curatorListFragment" />
     </fragment>
     <fragment
         android:id="@+id/lectureFragment"
         android:name="com.github.taasonei.educationplatform.fragment.LectureFragment"
         tools:layout="@layout/fragment_lecture">
         <argument
-            android:name="id"
+            android:name="lectureId"
             android:defaultValue="-1"
             app:argType="integer" />
         <argument
             android:name="showToolbar"
             android:defaultValue="true"
             app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/curatorListFragment"
+        android:name="com.github.taasonei.educationplatform.fragment.CuratorListFragment"
+        android:label="fragment_curator_list"
+        tools:layout="@layout/fragment_curator_list" >
+        <argument
+            android:name="showToolbar"
+            app:argType="boolean"
+            android:defaultValue="true" />
     </fragment>
 </navigation>

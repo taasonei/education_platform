@@ -29,8 +29,8 @@ class LectureFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (args.id != -1) {
-            val currentLecture = lectures[args.id]
+        if (args.lectureId != -1) {
+            val currentLecture = lectures[args.lectureId]
             binding.apply {
                 lectureTitle.text = currentLecture.title
                 lectureDescription.text = currentLecture.subtitle
