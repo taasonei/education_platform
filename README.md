@@ -2,7 +2,7 @@
 
 [На русском](https://github.com/taasonei/education_platform/blob/master/README_ru.md)
 
-It's a native realization of hackathon's team project  
+It's a native realization of hackathon's team project which won 2 place  
 You can find original project which wrote on Flutter [here](https://github.com/sv-makh/team15)
 
 team members:
@@ -23,3 +23,11 @@ The thirs is user profile screen.
 ### Demo
 
 ![](https://github.com/taasonei/education_platform/blob/master/demo/demo.gif)
+
+### Refactoring tasks
+
+UI
+1. Colors, styles and themes
+2. Extract all hardcoded strings
+3. Reusing repeating views
+4. ...
