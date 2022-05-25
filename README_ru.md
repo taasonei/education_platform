@@ -3,7 +3,7 @@
 [English](https://github.com/taasonei/education_platform/blob/master/README.md)
 
 Нативная версия проекта обучающей платформы  
-Кросплатформенная версия, созданная в рамках хакатона ITGIRLS 7.05.2022 на Flutter, доступна по [ссылке](https://github.com/sv-makh/team15)
+Кросплатформенная версия, созданная в рамках хакатона ITGIRLS 7.05.2022 на Flutter и занявшая 2-е место, доступна по [ссылке](https://github.com/sv-makh/team15)
 
 участницы команды:
 - [sv-makh](https://github.com/sv-makh)
@@ -22,3 +22,11 @@
 ### Демо
 
 ![](https://github.com/taasonei/education_platform/blob/master/demo/demo.gif)
+
+### Задачи на рефакторинг
+
+UI
+1. Настроить цвета, стили и темы в соответствии с дизайном
+2. Вынести все строки
+3. Выделить повторно используемые элементы для переиспользования
+4. ...
